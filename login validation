@@ -1,0 +1,13 @@
+# List of [username, password] pairs
+userlist = [['alice', 'password1'], ['bob', 'password2']]
+
+def login():
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+    for user in userlist:
+        if user[0] == username and user[1] == password:
+            print("Login successful!")
+            return
+    print("Invalid username or password.")
+
+login()
